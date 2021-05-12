@@ -5,35 +5,28 @@ Proceso Matriz_Ejercicio_Ajedrez
 	iLong<-8;
 	jLong<-8;
 	iLongJugada<-3;
-	
-	/// Cargo todo el tablero en Blanco
-	Para i<-1 Hasta iLong Hacer
-		Para j<-1 Hasta jLong Hacer
-			Tablero[i,j]<-" ";
-		FinPara
+	Para i=1 Hasta iLong Hacer
+		Para j=1 Hasta jLong Hacer
+			Tablero[i,j] = "-";
+		FinPara
 	FinPara
-	
-	/// Inicializo las piezas en el Tablero
-	Tablero[7,7]<-"Rey Blanco";
-	Tablero[7,6]<-"Reina Blanca";
-	Tablero[6,3]<-"Rey Negro";
-	Tablero[2,5]<-"Reina Negra";
-	
-	/// Realizo el movimiento de la Reina
+	Tablero[7,7]="[r,B]";
+	Tablero[7,6]="[R,B]";
+	Tablero[6,3]="[r,N]";
+	Tablero[2,5]="[R,N]";
+	f = 2;
+	c = 5;
 	Para i<-1 Hasta iLongJugada Hacer
-		/// Movimiento Diagonal
-		Tablero[2+i,5-i]<-"Reina Negra";
-		/// Borro el movimiento anterior
-		Tablero[1+i,6-i]<-" ";
-		/// Escribo la ruta 
-		Escribir "Reina en Posicion -> [",2+i,",",5-i,"]";
+		Tablero[f,c]=" ";
+		f = f+1;
+		c = c-1; 
+		Tablero[f,c]="[R,N]";
+		Escribir "Reina en Posicion -> [",f,",",c,"]";
 	FinPara
-	
-	/// Muestro el Tablero
-	Para i<-1 Hasta iLong Hacer
-		Para j<-1 Hasta jLong Hacer
-			Escribir "[",i,",",j,"] -> ",Tablero[i,j];
-		FinPara
+	Para i=1 Hasta iLong Hacer
+		Para j=1 Hasta jLong Hacer
+			Escribir "[",i,",",j,"] -> ",Tablero[i,j],Sin Saltar;
+		FinPara
+		Escribir " ";
 	FinPara
-	
-FinProceso
+FinProceso
