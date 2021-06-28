@@ -1,0 +1,3 @@
+ El usuario ingreso 4|34|Perro
+ El usuario ingreso 5|23|Gato
+ El usuario ingreso 6|34|Pajaro
