@@ -4,6 +4,40 @@ class conductor:
         self.apellido = apellido
         self.edad = edad
 
+class coordenadas:
+    def __init__(self,x,y,z):
+        self.posX = x
+        self.posY = y
+        self.posZ = z
+
+class vehiculo:
+    def __init__(self, combustible, ventanas, puertas, color, material):
+        self.combustible = combustible
+        self.ventanas = ventanas
+        self.puertas = puertas
+        self.color = color
+        self.material = material
+        self.posicion = coordenadas(0,0,0)
+        self.encendido = False
+
+    def encendido(self,estado):
+        self.encendido = estado
+    
+    def desplazarY(self,posY):
+        self.posicion.posY = posY
+
+    def desplazarZ(self,posZ):
+        self.posicion.posZ = posZ
+
+    def desplazarX(self,posX):
+        self.posicion.posX = posX
+
+class avion(vehiculo):
+    def __init__(self, combustible, ventanas, puertas, color, material):
+
+        
+        
+
 
 class automovil:
     def __init__(self,color,cantidadPuertas, marca, modelo, tipoCombustible,nombre,apellido, edad):
