@@ -1,4 +1,4 @@
-from PyQt5 import QtWidgets, QtCore, QtGui, uic
+from PyQt5 import QtWidgets, uic
 import sys
 
 template = uic.loadUiType("main.ui")[0]
