@@ -12,4 +12,4 @@ if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
     ventana = Ventana1()
     ventana.show()
-    sys.exit(app.exec_())
+    sys.exit()
