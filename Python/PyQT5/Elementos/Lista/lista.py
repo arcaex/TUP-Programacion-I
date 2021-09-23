@@ -24,7 +24,7 @@ class MiVentana(QMainWindow):
     def remove_all(self):
         self.lista.clear()
 
-app = QApplication([])
+app = QApplication()
 win = MiVentana()
 win.show()
 app.exec_()

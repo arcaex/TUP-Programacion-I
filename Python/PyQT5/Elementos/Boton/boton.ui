@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>234</width>
-    <height>169</height>
+    <width>311</width>
+    <height>244</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -22,6 +22,13 @@
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="entrar">
+      <property name="text">
+       <string>Entrar</string>
       </property>
      </widget>
     </item>
