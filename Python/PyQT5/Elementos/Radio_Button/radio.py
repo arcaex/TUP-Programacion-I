@@ -9,6 +9,11 @@ class MiVentana(QMainWindow):
         self.opcion1.toggled.connect(self.on_toggled)
         self.opcion2.toggled.connect(self.on_toggled)
         self.opcion3.toggled.connect(self.on_toggled)
+        self.checkBox.toggled.connect(self.on_checked)
+        self.checkBox_2.toggled.connect(self.on_checked)
+
+    def on_checked(self):
+        print("checked")
 
     def on_toggled(self):
         print("Cambio de estado")

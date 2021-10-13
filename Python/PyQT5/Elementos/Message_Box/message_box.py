@@ -18,8 +18,7 @@ class MiVentana(QMainWindow):
         msg.setIcon(QMessageBox.Question)
         # msg.setStandardButtons(
         # QMessageBox.Yes | QMessageBox.No | QMessageBox.Cancel | QMessageBox.Ok | QMessageBox.Open | QMessageBox.Close | QMessageBox.Save | QMessageBox.SaveAll | QMessageBox.Abort | QMessageBox.Retry | QMessageBox.Ignore)
-        msg.setStandardButtons(
-            QMessageBox.Yes | QMessageBox.No | QMessageBox.Cancel)
+        msg.setStandardButtons(QMessageBox.Yes | QMessageBox.No | QMessageBox.Cancel)
 
         respuesta = msg.exec_()
         if respuesta == QMessageBox.Yes:

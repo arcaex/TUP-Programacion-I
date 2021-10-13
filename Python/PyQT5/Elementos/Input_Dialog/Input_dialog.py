@@ -11,15 +11,14 @@ class MiVentana(QMainWindow):
     def on_ingresar(self):
         
         items = ['Rojo', 'Verde', 'Azul']
-        item, ok = QInputDialog.getItem(
-            self, 'Ingresar', 'Eliga un item', items, 1, False)
+        item, ok = QInputDialog.getItem(self, 'Ingresar', 'Elija un item', items, 1, False)
         if ok:
             self.entrada.setText(item)
+        else:
+            self.entrada.setText("ERROR")
 
 
 app = QApplication([])
-
 win = MiVentana()
 win.show()
-
 app.exec_()

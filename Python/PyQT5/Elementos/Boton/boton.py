@@ -1,5 +1,5 @@
 from PyQt5.QtWidgets import QMainWindow, QApplication
-from PyQt5 import uic
+from PyQt5 import uic, QtGui, QtWidgets
 from random import randint
 
 
@@ -11,6 +11,7 @@ class MiVentana(QMainWindow):
         self.boton.clicked.connect(self.print_click)
         self.entrar.pressed.connect(self.pressed)
         self.entrar.released.connect(self.on_clicked)
+        self.botonazo = QtWidgets.QPushButton("Botonazo")
 
     def print_click(self):
         print("click!")
@@ -24,7 +25,7 @@ class MiVentana(QMainWindow):
     def on_clicked(self):
         valorDado = randint(1,6)
         print(self.etiqueta.text())
-        self.etiqueta.setText(str(valorDado)) 
+        self.etiqueta.setText(str(valorDado))
 
 app = QApplication([])
 win = MiVentana()
