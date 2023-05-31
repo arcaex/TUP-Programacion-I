@@ -7,18 +7,20 @@ while edad < 18:
     print ("Felicidades, tienes" + str(edad))
     
 salir = False
-# if salir --> if salir == True
-# if not salir --> if salir == False
+# # if salir --> if salir == True
+# # if not salir --> if salir == False
 
 while not salir:
-    opcion = input("Ingrese Entrada \n")
-    if opcion == "adios":
+    print(" == MENU == ")
+    print("1. Sumar")
+    print("2. Salir")
+    opcion = input("Ingrese una Opción \n")
+    if opcion == "1":
+       numero1 = int(input("Ingrese un número \n")) 
+       numero2 = int(input("Ingrese otro número \n"))
+       suma = numero1 + numero2
+       print(suma)
+    elif opcion == "2":
         salir = True
-    else:
-        print(opcion)
-
-opcion = ""
-while (opcion!="adios" or opcion=="seguir"):
-    opcion = input("Ingrese Entrada \n")
 
 

@@ -20,7 +20,7 @@ for i in range(0, 3, 1):
         fila = fila + "[" + str(matriz[i][j]) + "]"
     print(fila)
     fila = ""
-#Comentario
+
 print(matriz[::1][::1])
 
 for elemento in secuencia:
